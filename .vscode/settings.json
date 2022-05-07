@@ -1,0 +1,10 @@
+{
+    "editor.mouseWheelScrollSensitivity": 7,
+    "editor.mouseWheelZoom": true,
+    "files.associations": {
+        "stdio.h": "c",
+        "GURU.C": "cpp",
+        "stdlib.h": "c"
+    },
+    "code-runner.clearPreviousOutput": true
+}
