@@ -11,7 +11,7 @@ int main()
     printf("string is\n");
     printf("%s", num);
     printf("\n %d", strlen(num));
-    printf("%S", num[0]);
+                                   printf("%S", num[0]);
     for (int i = 0; i < b / 2; i++)
     {
         temp = num[0];
