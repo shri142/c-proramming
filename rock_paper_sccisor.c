@@ -1,176 +1,158 @@
-#include<stdio.h>
+#include <stdio.h>
 
-#include<stdlib.h>
-#include<time.h>
+#include <stdlib.h>
+#include <time.h>
 
 int shri(int n)
-  
-    {
-  
-      srand(time(NULL));
-   
-       return rand()%n;
-  }  
-  
- void name() 
 
-{  
-   printf("whats your name\n\n");
+{
 
-   char T [20];
+  srand(time(NULL));
 
-   scanf("%s",T);
-
-   printf("welcome %s\n\n",T);
-
-    
+  return rand() % n;
 }
-      
-  int main()  
 
-{  int s;
-   int a;
-   int c;
-   
-   printf(" Hi ,Welcome to play rock,paper and sccissor\n");
+void name()
 
-  name() ;
+{
+  printf("whats your name\n\n");
 
- 
-   printf("choose 1 >>for rock\n");
+  char T[20];
 
+  scanf("%s", T);
 
-    printf("choose 2 >>for paper\n");
-    
+  printf("welcome %s\n\n", T);
+}
 
-    printf("choose 3 >>for sccisor\n");
- 
- 
-    printf("*****enter 0 to stop*****\n");
+int main()
 
-    
-    printf("lets start😃\n \n");
+{
+  int s;
+  int a;
+  int c;
 
-  again:
+  printf(" Hi ,Welcome to play rock,paper and sccissor\n");
 
-  Fuck:  
-   
-    printf("enter no.\n");
-    
-   scanf("%d",&c);
+  name();
 
-    if(c==0)
+  printf("choose 1 >>for rock\n");
 
-   {  goto end ;}
+  printf("choose 2 >>for paper\n");
 
-    if(c==1) 
-    
-   { printf("you:rock\n "); }
-    
-    
-      else if(c==2) 
-  
-  {  printf("you:paper\n "); }
+  printf("choose 3 >>for sccisor\n");
 
-        
-      else if(c==3)
-    
-  { printf("you:sccisor\n"); }
+  printf("*****enter 0 to stop*****\n");
 
-                
-       else   
-        
-   { printf("plz,type only from 1,2 and 3\n");   
+  printf("lets start😃\n \n");
 
-                
-        goto again;
-        
-        
-      }
-        
-     
-      printf("me : ");
- 
-       
-     s =  shri(3) ;
+again:
 
-    printf("",s);
+Fuck:
 
-      
+  printf("enter no.\n");
 
-  if (s==0)
+  scanf("%d", &c);
 
-    
-    {   printf("rock\n");  }
-     
-     
-   else if (s==1)
+  if (c == 0)
 
-     
-    { printf("paper\n"); }
-        
-        
-   else if(s==2)
+  {
+    goto end;
+  }
 
-     
-     { printf("sccisor\n"); }
-  
-    
-   else { printf("sorry there is some error");}
-    
-   
-     if(c==1 && s==0)
-    
-  
-      printf("<<tie😬>>\n\n\n");
-    
- 
- else if(c==1 && s==1) 
-        
-     printf("<<you lose😁>>\n\n\n");   
-  
-        
-  else if(c==1 && s==2)  
-          
-        printf("<<you win😕>>\n\n\n");
- 
-  
-  else if (c==2 && s==0)  
+  if (c == 1)
 
-        printf("<<you win😕>>\n\n\n");  
-    
-                   
-   else if (c==2 && s==1)  
+  {
+    printf("you:rock\n ");
+  }
 
-        printf("<<tie😬>>\n\n\n");       
- 
-                  
-   else if (c==2 && s==2)  
+  else if (c == 2)
 
-        printf("<<you lose😁>>\n\n\n");     
-  
-                      
-    else if (c==3 && s==0)  
+  {
+    printf("you:paper\n ");
+  }
 
-        printf("<<you lose😁>>\n\n\n");  
-            
-                   
-    else if (c==3 && s==1)  
+  else if (c == 3)
 
-        printf("<<you win😕>>\n\n\n");       
-  
-                      
-   else if (c==3 && s==2)  
+  {
+    printf("you:sccisor\n");
+  }
 
-        printf("<<tie😬>>\n\n\n");               
- 
-         
-        goto Fuck;
-        
-    end:             
+  else
 
-                  
+  {
+    printf("plz,type only from 1,2 and 3\n");
+
+    goto again;
+  }
+
+  printf("me : ");
+
+  s = shri(3);
+
+  printf("", s);
+
+  if (s == 0)
+
+  {
+    printf("rock\n");
+  }
+
+  else if (s == 1)
+
+  {
+    printf("paper\n");
+  }
+
+  else if (s == 2)
+
+  {
+    printf("sccisor\n");
+  }
+
+  else
+  {
+    printf("sorry there is some error");
+  }
+
+  if (c == 1 && s == 0)
+
+    printf("<<tie😬>>\n\n\n");
+
+  else if (c == 1 && s == 1)
+
+    printf("<<you lose😁>>\n\n\n");
+
+  else if (c == 1 && s == 2)
+
+    printf("<<you win😕>>\n\n\n");
+
+  else if (c == 2 && s == 0)
+
+    printf("<<you win😕>>\n\n\n");
+
+  else if (c == 2 && s == 1)
+
+    printf("<<tie😬>>\n\n\n");
+
+  else if (c == 2 && s == 2)
+
+    printf("<<you lose😁>>\n\n\n");
+
+  else if (c == 3 && s == 0)
+
+    printf("<<you lose😁>>\n\n\n");
+
+  else if (c == 3 && s == 1)
+
+    printf("<<you win😕>>\n\n\n");
+
+  else if (c == 3 && s == 2)
+
+    printf("<<tie😬>>\n\n\n");
+
+  goto Fuck;
+
+end:
+
   return 0;
-
-
 }
