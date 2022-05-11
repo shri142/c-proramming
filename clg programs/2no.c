@@ -1,4 +1,3 @@
-// A 057 SHRIKRISHNA LAXMAN UMBARE
 // C program to read two numbers and print the sum , diffrence , product and quotient of two numbers
 #include<stdio.h>
 int main()
